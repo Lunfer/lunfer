@@ -1,92 +1,88 @@
 import * as React from "react";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Grid from "@mui/material/Grid";
-import Image from "next/image";
-import Link from "@mui/material/Link";
 import "aos/dist/aos.css";
+
+const LINKS = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/zoikousteni/",
+    icon: "/linkedin.svg",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/Lunfer",
+    icon: "/github.svg",
+  },
+  {
+    label: "DataCamp",
+    href: "https://www.datacamp.com/profile/zoikousteni",
+    icon: "/datacamp.svg",
+  },
+  {
+    label: "Email",
+    href: "mailto:zoikousteni@hotmail.com",
+    icon: "/email.svg",
+  },
+];
 
 const ContactBox = () => {
   return (
-    <React.Fragment>
-      <Box
-        id="contactBox"
-        data-aos="fade-right"
-        data-aos-anchor="#skillsBox"
-        data-aos-anchor-placement="center-center"
-        sx={{
-          background: "rgba(255, 255, 255, 0.4)",
-          border: "none",
-          borderRadius: "40px",
-          justifyContent: "center",
-          padding: "20px",
+    <section id="contact" data-aos="fade-up" data-aos-duration="700" className="glass-card">
+      <p className="section-label">05 — Contact</p>
+      <h2
+        style={{
+          margin: "0 0 14px",
+          fontSize: "1.6rem",
+          fontWeight: 700,
+          fontFamily: "Dosis, sans-serif",
+          borderBottom: "1px solid rgba(0,0,0,0.15)",
+          paddingBottom: 10,
         }}
       >
-        <Typography
-          variant="h5"
-          gutterBottom
-          sx={{ borderBottom: "1px solid" }}
-        >
-          Contact info
-        </Typography>
-        <Grid
-          container
-          direction="row"
-          spacing={0}
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Grid item xs={1}>
-            <Link
-              href="https://www.linkedin.com/in/zoikousteni/"
-              sx={{ paddingTop: "2px" }}
-            >
-              <Image
-                src="/linkedin.svg"
-                alt="LinkedIn Logo"
-                width={35}
-                height={25}
-              />
-            </Link>
-          </Grid>
-          <Grid item xs={1}>
-            <Link
-              href="https://www.datacamp.com/profile/zoikousteni"
-              sx={{ paddingTop: "2px" }}
-            >
-              <Image
-                src="/datacamp.svg"
-                alt="DataCamp Logo"
-                width={35}
-                height={25}
-              />
-            </Link>
-          </Grid>
-          <Grid item xs={1}>
-            <Link href="https://github.com/Lunfer" sx={{ paddingTop: "2px" }}>
-              <Image
-                src="/github.svg"
-                alt="Github Logo"
-                width={35}
-                height={25}
-              />
-            </Link>
-          </Grid>
-          <Grid item xs={1}>
-            <Button
-              variant="text"
-              onClick={() =>
-                (window.location = "mailto:zoikousteni@hotmail.com")
-              }
-            >
-              <Image src="/email.svg" alt="Email icon" width={35} height={25} />
-            </Button>
-          </Grid>
-          <Grid item xs={8}></Grid>
-        </Grid>
-      </Box>
-    </React.Fragment>
+        Get in Touch
+      </h2>
+      <p
+        style={{
+          margin: "0 0 24px",
+          fontSize: "1rem",
+          lineHeight: 1.7,
+          color: "#333",
+          fontFamily: "Dosis, sans-serif",
+        }}
+      >
+        Always happy to connect — whether it&apos;s about a project, an opportunity,
+        or just a good conversation. Find me on:
+      </p>
+      <div style={{ display: "flex", gap: 20, flexWrap: "wrap", alignItems: "center" }}>
+        {LINKS.map((l) => (
+          <a
+            key={l.label}
+            href={l.href}
+            target={l.href.startsWith("mailto") ? undefined : "_blank"}
+            rel="noopener noreferrer"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 8,
+              background: "rgba(255,255,255,0.55)",
+              border: "1px solid rgba(0,0,0,0.1)",
+              borderRadius: 999,
+              padding: "8px 18px",
+              fontFamily: "Dosis, sans-serif",
+              fontWeight: 600,
+              fontSize: "0.9rem",
+              color: "#1a1a1a",
+              transition: "background 0.2s",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.8)")}
+            onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.55)")}
+          >
+            <img src={l.icon} alt={l.label + " icon"} width={20} height={20} style={{ display: "block" }} />
+            {l.label}
+          </a>
+        ))}
+      </div>
+    </section>
   );
 };
+
 export default ContactBox;

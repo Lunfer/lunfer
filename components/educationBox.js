@@ -1,40 +1,44 @@
 import * as React from "react";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
 import "aos/dist/aos.css";
 
 const EducationBox = () => {
   return (
-    <React.Fragment>
-      <Box
-        id="educationBox"
-        data-aos="fade-left"
-        data-aos-anchor="#AboutMeBox"
-        data-aos-anchor-placement="center-center"
-        sx={{
-          background: "rgba(255, 255, 255, 0.4)",
-          border: "none",
-          borderRadius: "40px",
-          justifyContent: "center",
-          padding: "20px",
+    <section id="education" data-aos="fade-up" data-aos-duration="700" className="glass-card">
+      <p className="section-label">02 — Education</p>
+      <h2
+        style={{
+          margin: "0 0 20px",
+          fontSize: "1.6rem",
+          fontWeight: 700,
+          fontFamily: "Dosis, sans-serif",
+          borderBottom: "1px solid rgba(0,0,0,0.15)",
+          paddingBottom: 10,
         }}
       >
-        <Typography variant="h5" sx={{ borderBottom: "1px solid" }}>
-          Education
-        </Typography>
-        <Typography variant="subtitle1">
-          Currently a senior student at the University of West Attica in the
-          department of Industrial Design and Production Engineering, formerly
-          known as the department of Automation Engineering, pursuing my
-          Bachelor&apos;s degree. {<br />} I have also successfully attended a
-          semester at the University of Osijek in Croatia, in the department of
-          Electrical Engineering and Computer Science, as an Erasmus+ student.
-          During this period I took up Croatian language courses that helped me
-          into getting my A1 degree, as well as some other courses like
-          &quot;Cryptography and System security&quot;.
-        </Typography>
-      </Box>
-    </React.Fragment>
+        Education
+      </h2>
+
+      <div className="timeline-entry">
+        <div className="timeline-role">BSc — Industrial Design & Production Engineering</div>
+        <div className="timeline-company">University of West Attica, Athens, Greece</div>
+        <div className="timeline-period">Graduated 2024</div>
+        <div className="timeline-desc">
+          Formerly the Department of Automation Engineering. Wrote an AI-based thesis
+          combining machine learning with real-world engineering applications.
+        </div>
+      </div>
+
+      <div className="timeline-entry">
+        <div className="timeline-role">Erasmus+ Exchange — Computer Science & Electrical Engineering</div>
+        <div className="timeline-company">University of Osijek, Osijek, Croatia</div>
+        <div className="timeline-period">2022 — One semester abroad</div>
+        <div className="timeline-desc">
+          Took courses including <em>Cryptography and System Security</em>.
+          Also earned an A1 certificate in Croatian language during this period.
+        </div>
+      </div>
+    </section>
   );
 };
+
 export default EducationBox;

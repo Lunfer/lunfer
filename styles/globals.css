@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Dosis", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -13,10 +14,63 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Layout */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero section: full-height, background photo fixed */
+.hero-bg {
+  background-image: url(/images/pexels.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Content below the hero */
+.content-bg {
+  background-image: url(/images/pexels.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 40px 24px 60px;
+}
+
+/* Frosted glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  padding: 28px 32px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Skill chips */
+.skill-chip {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  padding: 4px 14px;
+  margin: 4px;
+  font-size: 0.85rem;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Bouncing arrow */
 .arrow {
   text-align: center;
-  margin: 8% 0;
+  margin: 6% 0 2%;
 }
+
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -32,9 +86,123 @@ a {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
   60% {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
+  }
+}
+
+/* Sticky nav bar */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 32px;
+}
+
+.sticky-nav .nav-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.sticky-nav .nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky-nav .nav-links a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.04em;
+  transition: opacity 0.2s;
+}
+
+.sticky-nav .nav-links a:hover {
+  opacity: 0.7;
+}
+
+/* Section label */
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 0 0 6px;
+}
+
+/* Timeline entries (Experience / Education) */
+.timeline-entry {
+  border-left: 2px solid rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+  margin-bottom: 20px;
+}
+
+.timeline-entry:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-role {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-family: "Dosis", sans-serif;
+}
+
+.timeline-company {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 4px;
+  font-family: "Dosis", sans-serif;
+}
+
+.timeline-period {
+  font-size: 0.78rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 6px;
+  font-family: "Dosis", sans-serif;
+}
+
+.timeline-desc {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.6;
+  font-family: "Dosis", sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sticky-nav .nav-links {
+    gap: 12px;
+  }
+  .content-bg {
+    padding: 24px 12px 40px;
+  }
+  .glass-card {
+    padding: 20px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sticky-nav .nav-links {
+    display: none;
   }
 }
