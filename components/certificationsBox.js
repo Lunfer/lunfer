@@ -34,7 +34,7 @@ const ALL_CERTS_URL = "https://www.linkedin.com/in/zoikousteni/details/certifica
 
 const CertificationsBox = () => {
   return (
-    <section id="certifications" data-aos="fade-up" data-aos-duration="700" className="glass-card">
+    <section id="certifications" className="glass-card">
       <p className="section-label">06 — Certifications</p>
       <h2 className="section-heading">Certifications</h2>
 

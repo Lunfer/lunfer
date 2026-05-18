@@ -30,7 +30,7 @@ const EDUCATION = [
 
 const EducationBox = () => {
   return (
-    <section id="education" data-aos="fade-up" data-aos-duration="700" className="glass-card">
+    <section id="education" className="glass-card">
       <p className="section-label">02 — Education</p>
       <h2 className="section-heading">Education</h2>
 

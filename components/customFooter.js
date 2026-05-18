@@ -25,7 +25,7 @@ const CustomFooter = () => {
       }}
     >
       {/* Left: copyright */}
-      <span>© {new Date().getFullYear()} Zoi Kousteni · Hosted on GitHub Pages</span>
+      <span>© {new Date().getFullYear()} Zoe Kousteni · Hosted on GitHub Pages</span>
 
       {/* Centre: stack icons */}
       <div style={{ display: "flex", alignItems: "center", gap: 6 }}>

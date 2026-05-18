@@ -35,7 +35,7 @@ const PROJECTS = [
 
 const ProjectsBox = () => {
   return (
-    <section id="projects" data-aos="fade-up" data-aos-duration="700" className="glass-card">
+    <section id="projects" className="glass-card">
       <p className="section-label">04 — Projects</p>
       <h2 className="section-heading">Projects</h2>
 

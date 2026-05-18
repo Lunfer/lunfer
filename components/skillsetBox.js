@@ -20,11 +20,11 @@ const SKILL_GROUPS = [
   },
   {
     category: "Tools & Platforms",
-    chips: ["Git", "GitHub", "VS Code", "Jupyter", "Docker", "Linux"],
+    chips: ["Git", "GitHub", "VS Code", "Jupyter", "Docker (basics)", "Linux"],
   },
   {
     category: "Languages",
-    chips: ["Greek (native)", "English (fluent)", "Dutch (learning)", "Spanish (B2)", "Croatian (A1)", "Italian (A1)", "French (A1)"],
+    chips: ["Greek (native)", "English (fluent)", "Dutch (learning)", "Spanish (A1+)", "Croatian (A1)", "Italian (A1)", "French (A1)"],
   },
   {
     category: "Soft Skills",
@@ -34,7 +34,7 @@ const SKILL_GROUPS = [
 
 const SkillsetBox = () => {
   return (
-    <section id="skills" data-aos="fade-up" data-aos-duration="700" className="glass-card">
+    <section id="skills" className="glass-card">
       <p className="section-label">05 — Skills</p>
       <h2 className="section-heading">Skillset</h2>
 

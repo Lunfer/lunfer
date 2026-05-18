@@ -26,7 +26,7 @@ const LINKS = [
 
 const ContactBox = () => {
   return (
-    <section id="contact" data-aos="fade-up" data-aos-duration="700" className="glass-card">
+    <section id="contact" className="glass-card">
       <p className="section-label">05 — Contact</p>
       <h2 className="section-heading">Get in Touch</h2>
       <p className="body-text" style={{ marginBottom: 24 }}>

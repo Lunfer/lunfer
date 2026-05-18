@@ -8,16 +8,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Zoi Kousteni | Software Engineer</title>
-        <meta name="description" content="Portfolio & Resume of Zoi Kousteni — Software Engineer, Data Scientist, and ML enthusiast based in Greece." />
+        <title>Zoe Kousteni</title>
+        <meta name="description" content="Portfolio & Resume of Zoe Kousteni — Data Engineer, Analytics and AI, based in Rotterdam." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="layout">
-        <div className="hero-bg">
+        <div className="main-bg">
           <TopBar />
-        </div>
-        <div className="content-bg">
           <BoxGridder />
         </div>
         <CustomFooter />

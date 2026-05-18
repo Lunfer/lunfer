@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 
 const AboutMeBox = () => {
   return (
-    <section id="about" data-aos="fade-up" data-aos-duration="700" className="glass-card">
+    <section id="about" className="glass-card">
       <p className="section-label">01 — About</p>
       <h2 className="section-heading">About Me</h2>
       <p className="body-text">

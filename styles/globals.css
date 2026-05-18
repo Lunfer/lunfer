@@ -22,22 +22,13 @@ a {
   flex-direction: column;
 }
 
-/* Hero section: full-height, background photo fixed */
-.hero-bg {
+/* Single continuous background covering hero + all content */
+.main-bg {
   background-image: url(/images/pexels.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  min-height: 100vh;
-}
-
-/* Content below the hero */
-.content-bg {
-  background-image: url(/images/pexels.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  padding: 40px 24px 60px;
+  padding-bottom: 60px;
 }
 
 /* Frosted glass card */

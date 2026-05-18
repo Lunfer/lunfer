@@ -22,7 +22,7 @@ const QA = [
 
 const QuestionsBox = () => {
   return (
-    <section data-aos="fade-up" data-aos-duration="700" className="glass-card">
+    <section className="glass-card">
       <p className="section-label">06 — A little extra</p>
       <h2 className="section-heading">Interviewing Myself</h2>
       <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>

@@ -36,7 +36,7 @@ const EXPERIENCE = [
     role: "Software Engineer",
     company: "Squaredev",
     period: "Dec 2021 — Mar 2022 · 4 mos · Full-time · Athens",
-    desc: "Built full-stack web applications and REST APIs. Worked across the product lifecycle — from backend logic to frontend delivery — using JavaScript, React, and various frameworks.",
+    desc: "Built full-stack web applications and REST APIs. Worked across the product lifecycle from backend logic to frontend delivery using JavaScript, React, and various frameworks.",
   },
   {
     role: "Developer",
@@ -54,7 +54,7 @@ const EXPERIENCE = [
 
 const ExpBox = () => {
   return (
-    <section id="experience" data-aos="fade-up" data-aos-duration="700" className="glass-card">
+    <section id="experience" className="glass-card">
       <p className="section-label">03 — Experience</p>
       <h2 className="section-heading">Experience</h2>
 

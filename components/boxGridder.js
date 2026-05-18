@@ -14,6 +14,7 @@ const BoxGridder = () => {
       style={{
         maxWidth: 900,
         margin: "0 auto",
+        padding: "40px 24px 0",
         display: "flex",
         flexDirection: "column",
         gap: 32,

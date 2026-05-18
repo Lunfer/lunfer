@@ -18,7 +18,7 @@ const TopBar = () => {
     <>
       {/* Sticky frosted-glass nav */}
       <nav className="sticky-nav">
-        <span className="nav-name">Zoi Kousteni</span>
+        <a href="#top" className="nav-name">Zoe Kousteni</a>
         <ul className="nav-links">
           {NAV_LINKS.map((l) => (
             <li key={l.href}>
@@ -41,8 +41,6 @@ const TopBar = () => {
         }}
       >
         <h1
-          data-aos="fade-down"
-          data-aos-duration="900"
           style={{
             margin: "0 0 10px",
             fontSize: "clamp(3rem, 9vw, 7rem)",
@@ -52,16 +50,13 @@ const TopBar = () => {
             lineHeight: 1.05,
           }}
         >
-          Zoi{" "}
+          Zoe{" "}
           <span style={{ color: "white", textShadow: "0 2px 16px rgba(0,0,0,0.35)" }}>
             Kousteni
           </span>
         </h1>
 
         <p
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="800"
           style={{
             margin: "0 0 36px",
             fontSize: "clamp(0.95rem, 2.2vw, 1.3rem)",
@@ -76,9 +71,6 @@ const TopBar = () => {
         </p>
 
         <div
-          data-aos="fade-up"
-          data-aos-delay="400"
-          data-aos-duration="800"
           style={{
             maxWidth: 540,
             background: "rgba(255,255,255,0.22)",
