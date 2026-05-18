@@ -139,7 +139,9 @@ a {
   opacity: 0.7;
 }
 
-/* Section label */
+/* ─── Typography scale ───────────────────────────────────────────────────── */
+
+/* 01 — Section label  e.g. "01 — About" */
 .section-label {
   font-size: 0.7rem;
   font-weight: 700;
@@ -147,6 +149,36 @@ a {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.4);
   margin: 0 0 6px;
+  font-family: "Dosis", sans-serif;
+}
+
+/* 02 — Section heading  e.g. "About Me", "Experience" */
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Dosis", sans-serif;
+  color: #1a1a1a;
+  margin: 0 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* 03 — Entry title  e.g. job role, degree name, project title */
+/* (already .timeline-role — kept there for semantic clarity) */
+
+/* 04 — Subtitle / company / school */
+/* (already .timeline-company) */
+
+/* 05 — Period / meta */
+/* (already .timeline-period) */
+
+/* 06 — Body text  e.g. descriptions, about paragraphs, Q&A answers */
+.body-text {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #222;
+  font-family: "Dosis", sans-serif;
+  margin: 0;
 }
 
 /* Timeline entries (Experience / Education) */
@@ -182,7 +214,7 @@ a {
 }
 
 .timeline-desc {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #333;
   line-height: 1.6;
   font-family: "Dosis", sans-serif;

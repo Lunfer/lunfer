@@ -7,7 +7,9 @@ const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Education", href: "#education" },
   { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
+  { label: "Certs", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -70,7 +72,7 @@ const TopBar = () => {
             fontWeight: 600,
           }}
         >
-          Software Engineer&nbsp;&middot;&nbsp;Data Scientist&nbsp;&middot;&nbsp;ML Enthusiast
+          Data Engineer&nbsp;&middot;&nbsp;Analytics and AI&nbsp;&middot;&nbsp;Rotterdam, NL Based
         </p>
 
         <div

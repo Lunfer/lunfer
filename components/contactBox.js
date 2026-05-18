@@ -28,27 +28,8 @@ const ContactBox = () => {
   return (
     <section id="contact" data-aos="fade-up" data-aos-duration="700" className="glass-card">
       <p className="section-label">05 — Contact</p>
-      <h2
-        style={{
-          margin: "0 0 14px",
-          fontSize: "1.6rem",
-          fontWeight: 700,
-          fontFamily: "Dosis, sans-serif",
-          borderBottom: "1px solid rgba(0,0,0,0.15)",
-          paddingBottom: 10,
-        }}
-      >
-        Get in Touch
-      </h2>
-      <p
-        style={{
-          margin: "0 0 24px",
-          fontSize: "1rem",
-          lineHeight: 1.7,
-          color: "#333",
-          fontFamily: "Dosis, sans-serif",
-        }}
-      >
+      <h2 className="section-heading">Get in Touch</h2>
+      <p className="body-text" style={{ marginBottom: 24 }}>
         Always happy to connect — whether it&apos;s about a project, an opportunity,
         or just a good conversation. Find me on:
       </p>

@@ -3,48 +3,45 @@ import "aos/dist/aos.css";
 
 const SKILL_GROUPS = [
   {
-    category: "Data Science & ML",
-    chips: ["Python", "Machine Learning", "Data Visualisation", "R", "Pandas", "Scikit-learn", "Jupyter"],
+    category: "Data Engineering",
+    chips: ["Python", "SQL", "MS SQL Server", "SSIS", "Databricks", "Informatica", "BigQuery", "AWS S3", "ETL Pipelines", "Pandas"],
   },
   {
-    category: "Backend & APIs",
-    chips: ["Node.js", "FastAPI", "REST APIs", "C# / .NET", "JavaScript", "TypeScript"],
+    category: "Analytics & Reporting",
+    chips: ["Power BI", "DAX", "Looker Studio", "Google Analytics 4", "Google Tag Manager", "Web Analytics"],
   },
   {
-    category: "Frontend",
-    chips: ["React", "Next.js", "HTML/CSS", "Material UI", "Responsive Design"],
+    category: "Machine Learning & AI",
+    chips: ["PyTorch", "Keras", "Hugging Face", "LLMs", "Llama 3", "Scikit-learn", "NLP", "Computer Vision"],
+  },
+  {
+    category: "Backend & Dev",
+    chips: ["Flask", "REST APIs", "C# / .NET", "JavaScript", "React", "Next.js", "HTML / CSS", "Node.js"],
+  },
+  {
+    category: "Tools & Platforms",
+    chips: ["Git", "GitHub", "VS Code", "Jupyter", "Docker", "Linux"],
   },
   {
     category: "Languages",
-    chips: ["Greek (native)", "English (fluent)", "Spanish (A1+)", "Croatian (A1)", "Italian (A1)", "French (A1)"],
+    chips: ["Greek (native)", "English (fluent)", "Dutch (learning)", "Spanish (B2)", "Croatian (A1)", "Italian (A1)", "French (A1)"],
   },
   {
     category: "Soft Skills",
-    chips: ["Ownership & Accountability", "Team Communication", "Leadership", "Detail-Oriented", "Fast Learner"],
+    chips: ["Ownership & Accountability", "Cross-functional Collaboration", "Leadership", "Detail-Oriented", "Fast Learner", "Communication"],
   },
 ];
 
 const SkillsetBox = () => {
   return (
     <section id="skills" data-aos="fade-up" data-aos-duration="700" className="glass-card">
-      <p className="section-label">04 — Skills</p>
-      <h2
-        style={{
-          margin: "0 0 20px",
-          fontSize: "1.6rem",
-          fontWeight: 700,
-          fontFamily: "Dosis, sans-serif",
-          borderBottom: "1px solid rgba(0,0,0,0.15)",
-          paddingBottom: 10,
-        }}
-      >
-        Skillset
-      </h2>
+      <p className="section-label">05 — Skills</p>
+      <h2 className="section-heading">Skillset</h2>
 
       <p style={{ margin: "0 0 20px", color: "#333", fontFamily: "Dosis, sans-serif", fontSize: "0.97rem", lineHeight: 1.7 }}>
-        Over 30 completed courses across Data Science, Machine Learning, Management, and
-        Front-end Development. Strong sense of ownership — I love building things end-to-end
-        and have a keen eye for detail (blame the art background).
+        35+ completed courses across Data Engineering, Machine Learning, Analytics, and
+        Software Development. Strong sense of ownership — I love building things end-to-end
+        and have a keen eye for detail.
       </p>
 
       {SKILL_GROUPS.map((group) => (

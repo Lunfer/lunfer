@@ -24,18 +24,7 @@ const QuestionsBox = () => {
   return (
     <section data-aos="fade-up" data-aos-duration="700" className="glass-card">
       <p className="section-label">06 — A little extra</p>
-      <h2
-        style={{
-          margin: "0 0 20px",
-          fontSize: "1.6rem",
-          fontWeight: 700,
-          fontFamily: "Dosis, sans-serif",
-          borderBottom: "1px solid rgba(0,0,0,0.15)",
-          paddingBottom: 10,
-        }}
-      >
-        Interviewing Myself
-      </h2>
+      <h2 className="section-heading">Interviewing Myself</h2>
       <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
         {QA.map(({ q, a }) => (
           <div key={q}>

@@ -2,7 +2,9 @@ import * as React from "react";
 import AboutMeBox from "./aboutMeBox";
 import EducationBox from "./educationBox";
 import ExpBox from "./expBox";
+import ProjectsBox from "./projectsBox";
 import SkillsetBox from "./skillsetBox";
+import CertificationsBox from "./certificationsBox";
 import ContactBox from "./contactBox";
 import QuestionsBox from "./questionsBox";
 
@@ -20,7 +22,9 @@ const BoxGridder = () => {
       <AboutMeBox />
       <EducationBox />
       <ExpBox />
+      <ProjectsBox />
       <SkillsetBox />
+      <CertificationsBox />
       <ContactBox />
       <QuestionsBox />
     </div>
